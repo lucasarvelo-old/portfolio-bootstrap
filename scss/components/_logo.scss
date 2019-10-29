@@ -1,0 +1,11 @@
+.logo-navbar {
+  width: 3.7em;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.navbar-shrink .logo-navbar {
+  -webkit-transform: scale(0.8) translate(10px, 0px);
+  -ms-transform: scale(0.8) translate(10px, 0px);
+  transform: scale(0.8) translate(10px, 0px);
+}
