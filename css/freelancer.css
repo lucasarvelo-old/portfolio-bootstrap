@@ -9635,13 +9635,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .logo-navbar {
-  width: 3.7em;
-  margin-right: 15px;
+  width: 3rem;
+  margin-right: 5px;
   transition: all 0.3s ease;
-}
-
-.navbar-shrink .logo-navbar {
-  transform: scale(0.8) translate(10px, 0px);
 }
 
 .icon-custom {
