@@ -1,6 +1,21 @@
 <?php
+function validate_phone_number($phone)
+{
+     // Allow +, - and . in phone number
+     $filtered_phone_number = filter_var($phone, FILTER_SANITIZE_NUMBER_INT);
+     // Remove "-" from number
+     $phone_to_check = str_replace("-", "", $filtered_phone_number);
+     // Check the lenght of number
+     // This can be customized if you want phone number from a specific country
+     if (strlen($phone_to_check) < 10 || strlen($phone_to_check) > 14) {
+        return false;
+     } else {
+       return true;
+     }
+}
+
 // Check for empty fields
-if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) || !validate_phone_number($_POST['phone'])) {
   http_response_code(500);
   exit();
 }
