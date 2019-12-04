@@ -210,21 +210,21 @@
         <div class="col-lg-4 mr-auto text-center">
           <p class="lead">
           <h5>Languages and Tools:</h5>
-          <br />
-          <i class="devicon-javascript-plain colored icon-about"></i>
-          <i class="devicon-html5-plain-wordmark colored icon-about"></i>
-          <i class="devicon-css3-plain-wordmark colored icon-about"></i>
-          <i class="devicon-git-plain-wordmark colored icon-about"></i>
-          <br />
-          <br />
-          <i class="devicon-bootstrap-plain-wordmark icon-about"></i>
-          <i class="devicon-sass-original colored icon-about"></i>
-          <i class="devicon-react-original-wordmark colored icon-about"></i>
-          <i class="devicon-d3js-plain colored icon-about"></i>
-          <br />
-          <i class="devicon-express-original-wordmark icon-about"></i>
-          <i class="devicon-nodejs-plain-wordmark colored icon-about"></i>
-          <i class="devicon-visualstudio-plain-wordmark icon-about"></i>
+            <br />
+            <i class="devicon-javascript-plain colored icon-about"></i>
+            <i class="devicon-html5-plain-wordmark colored icon-about"></i>
+            <i class="devicon-css3-plain-wordmark colored icon-about"></i>
+            <i class="devicon-git-plain-wordmark colored icon-about"></i>
+            <br />
+            <br />
+            <i class="devicon-bootstrap-plain-wordmark icon-about"></i>
+            <i class="devicon-sass-original colored icon-about"></i>
+            <i class="devicon-react-original-wordmark colored icon-about"></i>
+            <i class="devicon-d3js-plain colored icon-about"></i>
+            <br />
+            <i class="devicon-express-original-wordmark icon-about"></i>
+            <i class="devicon-nodejs-plain-wordmark colored icon-about"></i>
+            <i class="devicon-visualstudio-plain-wordmark icon-about"></i>
           </p>
         </div>
       </div>
@@ -278,7 +278,7 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Phone Number</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" pattern="^\+?\d{0,14}" data-validation-required-message="Please enter your phone number." data-validation-pattern-message="Must be a valid phone number" >
                 <p class="help-block text-danger"></p>
               </div>
             </div>
